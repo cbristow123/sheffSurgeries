@@ -21,4 +21,8 @@ class Surgery {
 	openingTime		nullable:false, blank:false, scale:2;
 
     }
+
+static hasMany = [nurses:Nurse, patients:Patient, receptionists:Receptionist, doctors:Doctor, appointments:Appointment]
+
+static belongsTo = [doctors:Doctor]
 }

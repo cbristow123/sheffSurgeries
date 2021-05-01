@@ -17,4 +17,9 @@ class Nurse {
 	nursePhone 	nullable:false, blank:false;
 
 	}
+
+static hasMany = [doctors:Doctor] 
+
+static belongsTo = [surgery:Surgery, doctors:Doctor]
+
 }

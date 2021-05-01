@@ -16,4 +16,6 @@ class Receptionist {
 	recepPassword	nullable:false, blank:false;
 	recepPhone	nullable:false, blank:false, unique:true;
     }
+
+static belongsTo = [surgery:Surgery]
 }

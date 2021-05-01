@@ -20,4 +20,8 @@ class Patient {
 	dateRegistered		nullable:false, blank:false, date:true;
 	patientPhone		nullable:false, blank:false;	
     }
+
+static hasMany = [prescriptions:Prescription, appointments:Appointment, doctors:Doctor]
+
+static belongsTo = [surgery:Surgery]
 }

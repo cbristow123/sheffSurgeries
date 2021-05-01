@@ -19,4 +19,6 @@ class Prescription {
 	
 	
     }
+
+static belongsTo = [doctor:Doctor, patient:Patient]
 }

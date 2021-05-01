@@ -7,6 +7,10 @@ class Prescription {
 	BigDecimal 	totalCost
 	Date 		dateIssued
 	Boolean 	patientPaying
+	
+	String toString(){
+	return medicine
+	}
     
 	static constraints = {
 

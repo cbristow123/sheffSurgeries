@@ -6,13 +6,18 @@ class Appointment {
 	String 	appTime
 	String 	appDuration
 	String 	roomNumber
+	String 	appID
+
+	String toString (){
+	return appID
+	}
 
     static constraints = {
 	
 	appDate		nullable:false, blank:false;
 	appTime 	nullable:false, blank:false, scale:2;
 	appDuration	nullable:false, blank:false, inList:["30","45","60"];
-	roomNumber	nullable:false, blank:false, size:4..6; 
+	roomNumber	nullable:false, blank:false, size:1..6; 
     
 
 	}

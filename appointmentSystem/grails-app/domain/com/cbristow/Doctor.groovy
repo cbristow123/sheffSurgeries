@@ -11,11 +11,15 @@ class Doctor {
 	String	doctorPhone
 	String	bio
 	
+	String toString(){
+	return fullName
+	}
+	
 
     static constraints = {
 	fullName	nullable:false, blank:false;
 	qualification	nullable:false, blank:false;
-	position	nullable:false, blank:false, inList:["GP", "Surgeon"];
+	position	nullable:false, blank:false, inList:["Neuro Surgeon", "Heart Surgeon", "Proctologist Surgeon"];
 	doctorEmail	nullable:false, blank:false, unique:true, email:true;
 	password	nullable:false, blank:false;
 	doctorOffice	nullable:false, blank:false, size:4..6;
@@ -24,6 +28,6 @@ class Doctor {
     }
 
 static hasMany = [prescriptions:Prescription, appointments:Appointment, patients:Patient, nurses:Nurse, surgeries:Surgery]
-static belongsTo = [patients:Patient]
+static belongsTo = [Patient, Surgery]
 
 }	

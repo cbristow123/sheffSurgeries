@@ -4,7 +4,8 @@ class Prescription {
 	String 		pharmacyName
 	String		prescripNumber
 	String		medicine
-	BigDecimal 	totalCost
+	String 		totalCost
+	String 		daysOfSupply
 	Date 		dateIssued
 	Boolean 	patientPaying
 	
@@ -16,6 +17,7 @@ class Prescription {
 
 	pharmacyName		nullable:false, blank:false;
 	prescripNumber		nullable:false, blank:false;
+	daysOfSupply		nullable:false, blank:false;
 	medicine		nullable:false, blank:false;
 	totalCost		nullable:false, blank:false, scale:2;
 	dateIssued		nullable:false, blank:false;

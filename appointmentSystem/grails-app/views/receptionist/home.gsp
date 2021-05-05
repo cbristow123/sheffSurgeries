@@ -51,7 +51,13 @@
 		</button>
 
 	</div>
-
+	
+	<div class="first">
+		<h3> Search Patients </h3>
+		<p> Use this button to search Patients </p>
+		<button type="button" class="btn btn-success">
+		<g:link controller="patient" action="search"> Search Patient </g:link>
+		</button>
 
 </div>
 

@@ -50,15 +50,19 @@
 		<g:link controller="appointment" action="index">List Appointments</g:link>
 		</button>
 
-	</div>
+	
+
+	<div class="first">
+
+		<h3>Search</h3>
+		<p>Search Prescriptions Records</p>
+		<button type="button" class="btn btn-success">
+		<g:link controller="prescription" action="search"> Search Medicine </g:link>
+		</button>
 
 
 </div>
-
 </div>
-
 </div>
-
 </body>
-
 </html>

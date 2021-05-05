@@ -6,7 +6,7 @@ class Patient {
 	String	patientAddress
 	String	patientResidence
 	Date	patientDob
-	int	patientID
+	String	patientID
 	Date	dateRegistered
 	String	patientPhone
 
